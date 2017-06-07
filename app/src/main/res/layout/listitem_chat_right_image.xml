@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_avatar"  />
+
+    <com.panghaha.it.testchatdemo.common.CircleImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:id="@+id/iv_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/icon_avatar" >
+    </com.panghaha.it.testchatdemo.common.CircleImageView>
+
+    <TextView
+        android:id="@+id/chatname"
+        android:text="呵呵"
+        android:textSize="10sp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sendtime"
+        android:text="8:20"
+        android:textSize="9sp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

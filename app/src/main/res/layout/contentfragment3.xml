@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <!--<TextView-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="22sp"-->
+        <!--android:text="竟然有这种操作！\n真的有这种操作!\n这是假的操作!\n我有一句吗卖批不知当讲不当讲"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <ListView
+        android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nG\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

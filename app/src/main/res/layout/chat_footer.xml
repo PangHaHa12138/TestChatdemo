@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="11dp" >
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pull_to_refresh_load_progress"-->
+            <!--style="@android:style/Widget.ProgressBar.Large"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:indeterminate="true"-->
+
+            <!--/>-->
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/pull_to_refresh_load_progress"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:indicatorName="PacmanIndicator"/>
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:id="@+id/pull_to_refresh_loadmore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/pull_to_refresh_load_progress"
+            android:layout_centerVertical="true"
+            android:text="加载最新消息..." />
+    </RelativeLayout>
+
+</RelativeLayout>

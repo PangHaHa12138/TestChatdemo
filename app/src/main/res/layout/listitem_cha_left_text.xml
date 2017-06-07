@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <com.panghaha.it.testchatdemo.common.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/meinv2" >
+    </com.panghaha.it.testchatdemo.common.CircleImageView>
+
+    <TextView
+        android:id="@+id/chatname"
+        android:text="安琪宝贝"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="18dp"
+        android:layout_below="@id/iv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#353535"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:background="@drawable/common_chat_left"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/sendtime"
+        android:text="19:42"
+        android:textSize="9sp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

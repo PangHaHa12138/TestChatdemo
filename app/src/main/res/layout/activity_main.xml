@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+    android:id="@+id/titlefragment"
+    android:name="com.panghaha.it.testchatdemo.Titlefragment"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"/>
+
+    <!--<TextView-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="22sp"-->
+        <!--android:text="在未来的日子里，\n努力让抛弃我的人\n始终觉得她们的决定是正确的"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_above="@+id/bottom_navigation_bar"
+        android:layout_below="@+id/titlefragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

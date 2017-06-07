@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_splach">
+
+    <ImageView
+        android:id="@+id/login"
+        android:clickable="true"
+        android:layout_marginTop="360dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_btn_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/sign"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_btn_register"
+        android:layout_width="150dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
